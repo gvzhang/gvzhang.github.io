@@ -1,8 +1,9 @@
 ---
 title: Nginx常用配置以及陷阱
 categories:
- - Nginx
+ - web服务器
 tags:
+ - nginx
 ---
 
 #### location匹配规则
