@@ -4,10 +4,10 @@
 # ---------------------------------------------------------------
 
 # Site
-title: NexT
+title: zgJian's Note
 subtitle:
 description:
-author: John Doe
+author: Garvin Zhang
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%Y-%m-%d'
@@ -426,7 +426,7 @@ changyan:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-109147483-1
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
