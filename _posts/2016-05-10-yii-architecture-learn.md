@@ -9,7 +9,7 @@ tags:
 
 基于Yii2框架的架构分析图，整理了请求的生命周期以及主要功能模块的关系。
 
-![Yii2架构分析图](http://static.zgjian.cc/post/581fd4d43e76f.png-waterMark?v=11 "Yii2架构分析图")
+![Yii2架构分析图](https://static.zgjian.cc/post/581fd4d43e76f.png-waterMark?v=11 "Yii2架构分析图")
 
 通过DI（依赖注入）载入各模块
 
