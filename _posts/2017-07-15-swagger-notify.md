@@ -104,3 +104,6 @@ php -f /home/vagrant/Code/php-debug/Swagger-Notify/run.php 1>/tmp/swagger-notify
 
 #### 对比文件清理
 scripts文件夹里面的clean.sh脚本是用于定期清理对比文件，自行加入定时任务中
+
+#### GIT地址
+https://github.com/gvzhang/Swagger-Notify
