@@ -1,7 +1,7 @@
 ---
 title: ActiveRecord模式
 categories:
- - 开发架构
+ - 开发框架
 tags:
  - ActiveRecord
  - 数据库模型
