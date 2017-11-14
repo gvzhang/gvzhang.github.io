@@ -6,7 +6,7 @@ tags:
  - HttpHeaders
 ---
 
-####敏感信息禁止缓存
+#### 敏感信息禁止缓存
 - **Cache-Control**
 This response header, introduced in HTTP 1.1, may contain one or more directives, each carrying a specific caching semantic, and instructing HTTP clients and proxies on how to treat the response being annotated by the header. My recommendation is to format the header as follows: cache-control: no-cache, no-store, must-revalidate. These three directives pretty much instruct clients and intermediary proxies not to use a previously cached response, not to store the response, and that even if the response is somehow cached, the cache must be revalidated on the origin server.
 - **Pragma: no-cache**
@@ -23,8 +23,8 @@ function requestHandler(req, res) {
 }
 
 ```
-####强制使用HTTPS
-- **max-age=<number of seconds>**
+#### 强制使用HTTPS
+- **max-age=number of seconds**
 This instructs the browser to cache this header, for this domain, for the specified number of seconds. This can ensure tightened security for a long duration!
 - **includeSubDomains**
 This instructs the browser to apply HSTS for all subdomains of the current domain. This can be useful to cover all current and future subdomains you may have.
@@ -37,7 +37,7 @@ function requestHandler(req, res) {
 }
 
 ```
-####XSS过滤
+#### XSS过滤
 To help protect users against reflective XSS attacks, some browsers have implemented protection mechanisms. These mechanisms try to identify these attacks by looking for matching code patterns in the HTTP request and response. 
 
 Luckily, there is a way for a web app to override this configuration and ensure that the XSS filter is turned on for the web app being loaded by the browser. This is done via the **X-XSS-Protection** header. This header, supported by Internet Explorer (from version 8), Edge, Chrome and Safari, instructs the browser to turn on or off the browser’s built-in protection mechanism and to override the browser’s local configuration.
@@ -56,7 +56,7 @@ function requestHandler(req, res) {
 
 ```
 
-####控制IFRAME
+#### 控制IFRAME
 Clickjacking is an attack that tricks the user into clicking something different than what they think they’re clicking. 
 ```HTML
 <html>
@@ -74,7 +74,8 @@ function requestHandler(req, res) {
 }
 
 ```
-####明确来源白名单
+
+#### 明确来源白名单
 Content Security Policy，简称 CSP。顾名思义，这个规范与内容安全有关，主要是用来定义页面可以加载哪些资源，减少 XSS 的发生。
 ```Node.js
 
@@ -84,7 +85,8 @@ function requestHandler(req, res) {
 
 ```
 [Content Security Policy 介绍](https://imququ.com/post/content-security-policy-reference.html)
-####禁止Content-Type嗅探
+
+#### 禁止Content-Type嗅探
 互联网上的资源有各种类型，通常浏览器会根据响应头的Content-Type字段来分辨它们的类型。例如："text/html"代表html文档，"image/png"是PNG图片，"text/css"是CSS样式文档。然而，有些资源的Content-Type是错的或者未定义。这时，某些浏览器会启用MIME-sniffing来猜测该资源的类型，解析内容并执行。
 例如，我们即使给一个html文档指定Content-Type为"text/plain"，在IE8-中这个文档依然会被当做html来解析。利用浏览器的这个特性，攻击者甚至可以让原本应该解析为图片的请求被解析为JavaScript。通过下面这个响应头可以禁用浏览器的类型猜测行为：
 >X-Content-Type-Options: nosniff
