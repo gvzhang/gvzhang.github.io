@@ -7,7 +7,9 @@ tags:
 ---
 
 [InfoQ-解读2014](http://www.infoq.com/cn/interpretation-of-2014)
-***
+
+---
+
 ### 前端 - 颠覆式改变
 - HTML5正式定稿，ECMAScript 6 规范从纸上走到现实（前端新活力）
 - 基于Web Components的跨终端组件快速发展，前端开发方案带来巨大机会
