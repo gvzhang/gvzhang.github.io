@@ -15,7 +15,7 @@ Web刀耕火种的时代，创业型小项目非常之多，不分前后端，�
 ![原始](https://camo.githubusercontent.com/90850e93b917cd3c958dff1c7d0197f819167343/687474703a2f2f696d672e68622e616963646e2e636f6d2f63333639616163633864613338616638653432326664323935313438633537643162353831376666666335362d4f636250646c5f6677363538)
 
 直到有一天，出现了一个新物种：**产品经理**
-![进击的巨人](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/8882995f.jpg)
+![进击的巨人](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/8882995f.jpg)
 
 我们的需求越来越多了，功能实现越来越复杂了，项目越做越大了。前后端人员进入了混乱阶段。
 
@@ -23,11 +23,11 @@ Web刀耕火种的时代，创业型小项目非常之多，不分前后端，�
 
 所以我们进行了：前后端分离
 
-![前后端分离结构](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/20170707074824.png)
+![前后端分离结构](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/20170707074824.png)
 
 ### 前后端分离
 数据的展现是后端通过异步接口的方式提供的，前端只管展现。
-![前后端分离](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/20170710085036.png)
+![前后端分离](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/20170710085036.png)
 
 #### Web 前后端分离的意义
 - 网站前端展示页面变化远比后端变化频繁
@@ -60,7 +60,7 @@ API 在其的生命周期里要不断地演进、变化的，问题是这种变�
 
 #### 如何制定接口的契约以及修改后的及时通知消费者？
 ##### 从代码入手
-![mock server](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/contract-fe.png)
+![mock server](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/contract-fe.png)
 - 编写契约（即 API）。即规定好 API 请求的 URL、请求内容、返回结果、鉴权方式等等。
 - 根据契约编写 Mock Server。可以采用 Moco
 - 编写集成测试将请求发给这个 Mock Server，并验证
@@ -86,7 +86,7 @@ API文档需求
 ### SOA架构
 >SOA是一种设计方法，其中包含多个服务，而服务之间通过配合最终会提供一系列功能。一个服务通常以独立的形式存在于操作系统进程中。服务之间通过网络调用，而非采用进程内调用的方式进行通信。
 
-![SOA](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/89d9bfed11ff35943269b24b23b866b1.png)
+![SOA](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/89d9bfed11ff35943269b24b23b866b1.png)
 
 #### 基础服务
 基础服务组件不要面向功能，就是说它不关心是那个具体的业务功能在调用它，**它面向业务领域的核心基础逻辑，负责与业务对象和数据层交互，因此也封装了该领域的数据。（专注于数据层的扩展）**它的特征是稳定的，与数据层是紧密关联的，它与数据层一起构成应用系统稳定的核心和关键，其他部分包括服务组件和UI都是非关键和随时可以替换的。
@@ -94,7 +94,7 @@ API文档需求
 #### 组合服务
 服务组件实现的功能类似于面向功能的服务，但细节上完全不同，它不同于传统的服务直接操纵数据和处理业务逻辑，它不直接与数据层打交道，**它通过组合调用基础服务组件实现一个具体的业务功能。**
 
-![黑格组合服务](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/BusinessAPI.png)
+![黑格组合服务](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/BusinessAPI.png)
 
 #### 问题
 - 这跟一个接口直接完成业务以及数据操作的模式有什么不同？（数据操作重复，数据层难以扩展，安全性更高，维护复杂 ）
@@ -119,7 +119,7 @@ API文档需求
 
 API Gateway（API GW / API 网关），顾名思义，是出现在系统边界上的一个面向 API 的、串行集中式的**强管控服务**，这里的边界是企业 IT 系统的边界，主要起到隔离外部访问与内部系统的作用。
 
-![API网关](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/API-Gateway-v5.png)
+![API网关](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/API-Gateway-v5.png)
 
 #### 网关的作用和价值
 网关层作为客户端与服务端的一层挡板，主要起到了三大类作用：

@@ -9,7 +9,7 @@ tags:
 
 ### 简介
 
-![Linus](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/LinuxCon_Europe_Linus_Torvalds_03.jpg)
+![Linus](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/LinuxCon_Europe_Linus_Torvalds_03.jpg)
 林纳斯（Linus）·本纳第克特·托瓦兹
 
 同生活中的许多伟大事物一样，Git 诞生于一个极富纷争大举创新的年代。
@@ -29,14 +29,14 @@ Linux 内核开源项目有着为数众广的参与者。绝大多数的 Linux �
 
 ### 版本控制系统
 ##### 本地版本控制系统
-![本地版本控制系统](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/local-version-control.png)
+![本地版本控制系统](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/local-version-control.png)
 
 ##### 集中化版本控制系统
-![集中化版本控制系统](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/svn-version-control.png)
+![集中化版本控制系统](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/svn-version-control.png)
 （权限、联网、灾难）
 
 ##### 分布式版本控制系统
-![分布式版本控制系统](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/git-version-control.png)
+![分布式版本控制系统](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/git-version-control.png)
 
 ### 常用命令
 #### 新建代码库
@@ -419,7 +419,7 @@ Git 最强大之处在于它的分支管理，在本地你可以随意拉取分�
 最后一种是修补bug分支。软件正式发布以后，难免会出现bug。这时就需要创建一个分支，进行bug修补。
 修补bug分支是从Master分支上面分出来的。修补结束以后，再合并进Master和Develop分支。它的命名，可以采用fixbug-*的形式。
 
-![分支管理](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/git-model@2x.png)
+![分支管理](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/git-model@2x.png)
 
 #### 优缺点
 Git flow的优点是清晰可控，缺点是相对复杂，需要同时维护两个长期分支。大多数工具都将master当作默认分支，可是开发是在develop分支进行的，这导致经常要切换分支，非常烦人。
@@ -427,7 +427,7 @@ Git flow的优点是清晰可控，缺点是相对复杂，需要同时维护两
 更大问题在于，这个模式是基于"版本发布"的，目标是一段时间以后产出一个新版本。但是，很多网站项目是"持续发布"，代码一有变动，就部署一次。这时，master分支和develop分支的差别不大，没必要维护两个长期分支。
 
 ### Github Flow
-![Github Flow](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/bg2015122305.jpg)
+![Github Flow](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/bg2015122305.jpg)
 #### 优缺点
 Github flow 的最大优点就是简单，对于"持续发布"的产品，可以说是最合适的流程。
 

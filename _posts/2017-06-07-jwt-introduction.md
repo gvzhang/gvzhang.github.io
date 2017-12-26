@@ -7,7 +7,7 @@ tags:
  - token
 ---
 
-![token](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/8bd0945da42ab45179ed84f4974f9bd3.jpg)
+![token](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/8bd0945da42ab45179ed84f4974f9bd3.jpg)
 ### Token Auth的优点
 Token机制相对于Cookie机制又有什么好处呢？
 - **支持跨域访问**: Cookie是不允许垮域访问的，这一点对Token机制是不存在的，前提是传输的用户认证信息通过HTTP头传输.

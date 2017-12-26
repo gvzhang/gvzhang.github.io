@@ -27,7 +27,7 @@ tags:
 ### 灰度发布
 预发布环境过后，就是灰度发布了。由于一个项目，一般会部署到多台机器，所以灰度1台至三台，看看新功能是否ok，如果失败则只需要回滚几台，比较方便，AB test就是一种灰度发布方式。注意，由于是灰度发布几台，所以一般会使用跳板机，然后进行域名绑定，这样才可以保证只访问有最新代码的服务器。
 
-![灰度发布](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/220350j03i0znju45rlvr9.png)
+![灰度发布](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/220350j03i0znju45rlvr9.png)
 
 #### 跳板机
 是开发者登录到腾讯分配给应用服务器的唯一途径。开发者必须首先登录跳板机，再通过跳板机登录到应用服务器。
@@ -73,9 +73,9 @@ server {
 ```
 
 #### [新浪的动态策略灰度发布系统：ABTestingGateway](https://github.com/CNSRE/ABTestingGateway)
-![分流过程流程图](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/div_flowchart.png)
+![分流过程流程图](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/div_flowchart.png)
 
-![架构简图](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/20150818/20150818171120_268.png)
+![架构简图](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/20150818/20150818171120_268.png)
 
 ### 生产发布
 所有服务器上的代码都已经是最新的了。

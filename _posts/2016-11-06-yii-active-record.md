@@ -11,5 +11,5 @@ tags:
 
 > Active Record适合非常简单的领域需求，尤其在领域模型和数据库模型十分相似的情况下。如果遇到更加复杂的领域模型结构（例如用到继承、策略的领域模型），往往需要使用分离数据源的领域模型，结合Data Mapper（数据映射器）使用。
 
-![YIi2-ActiveRecord](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/post/Analyze_yii2_database_layout.png-waterMark "YIi2-ActiveRecord")
+![YIi2-ActiveRecord](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/post/Analyze_yii2_database_layout.png-waterMark "YIi2-ActiveRecord")
 

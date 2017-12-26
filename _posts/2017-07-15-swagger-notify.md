@@ -8,7 +8,7 @@ tags:
 ---
 
 ## 通知流程
-![notify flow](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/SwaggerNotifyFlow.jpg)
+![notify flow](https://zgjian-pic.oss-cn-beijing.aliyuncs.com/markdown/SwaggerNotifyFlow.jpg)
 
 ## 项目描述
 #### 接口设计
