@@ -8,7 +8,7 @@ tags:
 
 这是segmentfault中的一个问题，尝试把算法写出来了。
 
-> ![问题图片](http://static.zgjian.cc/post/58573ef41a98f.png)
+> ![问题图片](http://zgjian-pic.oss.cn-beijing.aliyuncs.com/post/58573ef41a98f.png)
 
 > 十间教室 六门课程教室支持课程如图所示
 

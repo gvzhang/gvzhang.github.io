@@ -297,11 +297,11 @@ int main(void) {
 ```
 
 ## 测试结果
-![client-asyn-block.png](https://static.zgjian.cc/post/58b128709bfc2.png "client-asyn-block.png")
+![client-asyn-block.png](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/post/58b128709bfc2.png "client-asyn-block.png")
 
 说明：因为在select中采用的是阻塞模式，SOCKET肯定发生了变化，所以不会执行`cir_count++;`
 
-![client-asyn-nonblock.png](https://static.zgjian.cc/post/58b128790a93d.png "client-asyn-nonblock.png")
+![client-asyn-nonblock.png](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/post/58b128790a93d.png "client-asyn-nonblock.png")
 
 说明：select不进行阻塞，在等待超时时返回0，然后执行`cir_count++;`
 

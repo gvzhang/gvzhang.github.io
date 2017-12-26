@@ -16,22 +16,22 @@ tags:
 
 ## 测试结果
 ### 同步阻塞IO：
-![server-同步-阻塞](https://static.zgjian.cc/post/58b117950c953.png "server-同步-阻塞")
+![server-同步-阻塞](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/post/58b117950c953.png "server-同步-阻塞")
 
 ###### 可见连接1、连接2、连接3是依次执行的，当其中一个连接出现阻塞，比如连接1阻塞5秒，那么下一个连接2也会被阻塞了5秒才能被执行。
 
 ### IO多路复用：
-![server-IO复用](https://static.zgjian.cc/post/58b1124a66b70.png "server-IO复用")
+![server-IO复用](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/post/58b1124a66b70.png "server-IO复用")
 说明：由于是交替执行的，所以不好区分是哪个连接，不过可以通过下图来对比
 
 ##### 连接1-阻塞5秒：
-![client1-阻塞5秒](https://static.zgjian.cc/post/58b1126d11192.png "client1-阻塞5秒")
+![client1-阻塞5秒](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/post/58b1126d11192.png "client1-阻塞5秒")
 
 ##### 连接2：
-![client2](https://static.zgjian.cc/post/58b11273db80e.png "client2")
+![client2](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/post/58b11273db80e.png "client2")
 
 ##### 连接3：
-![client3](https://static.zgjian.cc/post/58b1127acff3f.png "client3")
+![client3](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/post/58b1127acff3f.png "client3")
 
 ###### 可以看到连接1每次都阻塞了5秒才继续执行的，但是连接2和连接3却并没有受到阻塞的影响，马上就执行完了。
 

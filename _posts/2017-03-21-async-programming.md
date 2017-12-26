@@ -74,7 +74,7 @@ tags:
 
 所以协程违背了通常操作系统和x86的cpu认定的代码执行方式，也就是stack的这种执行方式，需要运行环境（比如php，python的yield和golang的goroutine）自己调度，来实现你所要求的这种代码执行的语义。
 
-![协程调用](https://static.zgjian.cc/markdown/14914233296912.jpg)
+![协程调用](https://zgjian-pic.oss.cn-beijing.aliyuncs.com/markdown/14914233296912.jpg)
 
 php在php5.5的时候引入了generator和coroutine,从核心上提出了一种方法去写不阻塞的IO,当然这和node的event loop还是有比较大的区别的,**它的主要理念是：把几个大任务分别分成多个小步轮流执行，有某个小任务在等待系统io的话，就跳过它，执行下一个小任务，这样总体提升了代码的效率。**
 
